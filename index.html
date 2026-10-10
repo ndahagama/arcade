@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NBA 2K13 Arcade</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #0b1020;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: #171f33;
+      padding: 25px;
+      text-align: center;
+      border-bottom: 4px solid #f59e0b;
+    }
+    h1 { color: #f59e0b; }
+    main {
+      max-width: 900px;
+      margin: 35px auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .screen {
+      padding: 55px 20px;
+      background: linear-gradient(135deg, #28334c, #111522);
+      border: 1px solid #56617a;
+      border-radius: 14px;
+    }
+    button {
+      background: #f59e0b;
+      color: #111;
+      padding: 15px 28px;
+      border: 0;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover { background: #ffc04d; }
+    #status { color: #ffc04d; }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #aab4c8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🏀 NBA 2K13 ARCADE</h1>
+    <p>Your basketball gaming hub</p>
+  </header>
+
+  <main>
+    <h2>NBA 2K13</h2>
+    <p>Welcome to the court. The game awaits!</p>
+
+    <section class="screen">
+      <h2 id="status">GAME CENTER</h2>
+      <p id="message">
+        Your browser game connection will appear here.
+      </p>
+      <button onclick="launchGame()">PLAY NBA 2K13</button>
+    </section>
+
+    <h2>About</h2>
+    <p>Revisit classic basketball gaming from 2012.</p>
+  </main>
+
+  <footer>NBA 2K13 Arcade · Fan-made project</footer>
+
+  <script>
+    function launchGame() {
+      document.getElementById("status").textContent =
+        "GAME CONNECTION NOT SET UP";
+      document.getElementById("message").textContent =
+        "The website is working! Browser streaming is our next step.";
+    }
+  </script>
+</body>
+</html>
